@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository
 @Repository
 class MockStoreDataSource: StoreDataSource {
 
-    val stores = listOf(Store("KFC"), Store(""))
+    val stores = listOf(Store("KFC"), Store("Dior"))
 
     override fun retrieveStores(): Collection<Store> = stores
 
