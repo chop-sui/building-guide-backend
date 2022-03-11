@@ -9,5 +9,6 @@ class StoreService(private val dataSource: StoreDataSource) {
 
     fun getStores(): Collection<Store> = dataSource.retrieveStores()
     fun getStore(id: Int): Store = dataSource.retrieveStore(id)
+    fun addStore(store: Store): Store = dataSource.createStore(store)
 
 }
